@@ -7,26 +7,24 @@ function App() {
   const [count, setCount] = useState(0);
   const [storedCrops, setStoredCrops] = useState(0);
 
-  let renderedComponent = null;
+  let renderedComponent;
 
   if (count < 10 && storedCrops < 10) {
-    renderedComponent = <Farmer count={count} setCount={setCount} />;
+    renderedComponent = null;
   } else {
     renderedComponent = (
-   <>
-      <Farmer count={count} setCount={setCount} />
       <Silo
         storedCrops={storedCrops}
         setStoredCrops={setStoredCrops}
         count={count}
         setCount={setCount}
       />
-      </>
     )
   }
 
   return (
     <div className="App">
+      <Farmer count={count} setCount={setCount} />
       {renderedComponent}
     </div>
   );
