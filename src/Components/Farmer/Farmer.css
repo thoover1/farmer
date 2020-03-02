@@ -1,14 +1,16 @@
-@mixin ComponentBoxStyle {
+.Farmer {
   margin: 20px auto;
   width: 85%;
   text-align: center;
-  box-shadow: 0 2px 3px #ccc;
+  -webkit-box-shadow: 0 2px 3px #ccc;
+          box-shadow: 0 2px 3px #ccc;
   border: 1px solid #eee;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@mixin ActiveButton {
+.Farmer button {
   background-color: green;
   border: solid lightgreen;
   border-radius: 5px;
@@ -16,15 +18,9 @@
   cursor: pointer;
 }
 
-.Farmer {
-  @include ComponentBoxStyle();
-  button {
-    @include ActiveButton();
-  }
-}
-
 @media (min-width: 1025px) {
   .Farmer {
     width: 40%;
   }
 }
+/*# sourceMappingURL=Farmer.css.map */

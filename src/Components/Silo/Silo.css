@@ -1,0 +1,60 @@
+.Farmer {
+  margin: 20px auto;
+  width: 85%;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 3px #ccc;
+          box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Farmer button {
+  background-color: green;
+  border: solid lightgreen;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .Farmer {
+    width: 40%;
+  }
+}
+
+.Silo {
+  margin: 20px auto;
+  width: 85%;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 3px #ccc;
+          box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Silo button {
+  background-color: green;
+  border: solid lightgreen;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Silo button:disabled {
+  background-color: red;
+  border: solid pink;
+  border-radius: 5px;
+  color: white;
+  cursor: not-allowed;
+}
+
+@media (min-width: 1025px) {
+  .Silo {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=Silo.css.map */

@@ -1,28 +1,21 @@
+@import "../Farmer/Farmer.scss";
+
 .Silo {
-    margin: 20px auto;
-    width: 85%;
-    text-align: center;
-    box-shadow: 0 2px 3px #ccc;
-    border: 1px solid #eee;
-    padding: 10px;
-    box-sizing: border-box;
-    button {
-        background-color: green;
-        border: solid lightgreen;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
+  @include ComponentBoxStyle();
+  button {
+    @include ActiveButton();
+    &:disabled {
+      background-color: red;
+      border: solid pink;
+      border-radius: 5px;
+      color: white;
+      cursor: not-allowed;
     }
-    button:disabled {
-        background-color: red;
-        border: solid pink;
-        border-radius: 5px;
-        color: white;
-        cursor: not-allowed;
-    }
+  }
 }
+
 @media (min-width: 1025px) {
-    .Silo {
-        width: 40%;
-    }
+  .Silo {
+    width: 40%;
+  }
 }
